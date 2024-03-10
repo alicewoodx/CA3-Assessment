@@ -4,33 +4,60 @@
   <title>Aberdeen</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
-<nav style="align:right; text-align:right; font-size: 17px; padding: 0px 0px 0px 100px;">
-    <div class="topnav">
-    <a class="active" href="index.html">Home</a>
-    <a href="history.html">History of Aberdeen</a>
-    <a href="visitor.html">Visit Aberdeen</a>
-    
-</div>
- 
-</nav>
-<body style="height: 100vh">
-  <div style="display:flex;flex-direction:column">
-    <div style="border-bottom:2.5px solid;border-color:#731A8C;">
-      <p style="font-size:50px;
-      font-family: arial;color:#731A8C;padding-left:20px;margin:0px; padding:1px;" >History of Aberdeen</p>
+
+<body style="height: 100%;padding: 10px;">
+  <div id="header" style="border-bottom:2.5px solid;border-color:#731A8C">
+    <div style="display:flex;justify-content:space-between">
+      <div>
+       <p class="pageHeader" >History of Aberdeen...</p>
+       </div>
+      <div>
+        <p style="font-size: 18px; color: #731A8C"><i>"Bon Accord!"</i></p>
+      </div>
+    </div>
+    <div style="display:flex;justify-content:space-between">
       <p style="padding:0px 0px 0px 400px;color:#731A8C;"><i>Founded in 1175</i></p>
-      <h2 ></h2> 
+      <nav id="navBar" style="float:right; text-align:right;font-size: 17px;">
+        <div style="padding-bottom:5px">
+          <a class="menuButton" href="index.html" >
+            <img style="padding:7px;" height=30px width=30px alt="CA3-Assessment/images/homeIcon" src="images/homeIcon.png"/>Home
+          </a>
+          <a class="menuButton active" style="margin-left:5px" href="history.html">
+            <img style="padding:7px" height=30px width=30px alt="CA3-Assessment/images/historyIcon" src="images/searchIcon.png"/>History of Aberdeen</a>
+          <a class="menuButton" href="visitor.html">
+            <img style="padding:7px" height= 35px width= 30px alt="CA3-Assessment/images/visiticon" src="images/visiticon.png"/>Visit Aberdeen</a> 
+        </div>
+      </nav>
     </div>
-    <h2>How was Aberdeen founded?</h2>
-    There have been people living in Aberdeen since the stone age, and the city was split into two: Old Aberdeen and New Aberdeen. Old Aberdeen hosted the university and the cathedrals whereas new Aberdeen was where fishing occurred. Aberdeen was first settled in 6000 BC, Romans arrived in Aberdeen and fought and defeated the united armies near the peak of benachie. 
-    <h2>The start of civilisation...</h2>
-    Roberts the Bruce transformed Aberdeen into a property owning and independent community, Aberdeen played a big role in Roberts life as they protected him during wars. Old Aberdeen was burned by Edward 111 of England but was soon rebuilt and extended, and for a while after Aberdeen were under attack by neighbouring lords. 
-    <h2>The 18th to 21st century...</h2>
-    The hospital was built as well as an asylum. The council improved roads by opening George Street, union street and king street, many new streets and houses were formed, as well as the council. 
-    Aberdeen is know filled with families upon different generations and is a home to many people. The castles affected by different attacks still remain as monuments and are available to visit.
+  </div>
+
+  <div id="mainBody" style="display:flex;flex-direction:row; gap:20px;">
+    <div id="leftColumn" >
+      <h2 class="header" >How was Aberdeen founded?</h2>
+    <p style="padding: 5px;">There have been people living in Aberdeen since the stone age, and the city was split into two: Old Aberdeen and New Aberdeen. Old Aberdeen hosted the university and the cathedrals whereas new Aberdeen was where fishing occurred. Aberdeen was first settled in 6000 BC, Romans arrived in Aberdeen and fought and defeated the united armies near the peak of benachie. </p>
+    <h2 class="header">The start of civilisation...</h2>
+    <p style="padding: 5px;"><a href="https://www.bbc.co.uk/history/historic_figures/bruce_robert_the.shtml">Robert the Bruce</a> turned Aberdeen into a property owning and independent community, Aberdeen played a big role in Roberts life as they protected him during wars. Old Aberdeen was burned by Edward III of England but was soon rebuilt and extended, and for a while after Aberdeen were under attack by neighbouring lords.</p> 
+    <p style="padding: 5px;">The castles affected by different attacks still remain as monuments and are available to visit. In 1647, we saw the outbreak of bubonic plague, and a quarter of the population died. In 1715 the Earl Marischal proclaimed the Old Pretender at Aberdeen, and in 1745 the Duke of Cumberland resided for a short time in the city before attacking the Young Pretender.</p>
     </div>
+    
     <div>
-      <img 
-    </body>
-    </html>
+      <img class="historyPageImage" alt="CA3-Assessment/images/homePageImage" src="images/historyPagePic.JPG"/>
+        <div>
+          <p style="text-align:right; color: #731A8C;"><i>This image shows Union Street in the 19th Century.</i> </p>
+        </div>
+    </div>
+    
+  </div>
+  <div>
+    <h2 class="header" >The 18th to 21st century...</h2>
+      <p>The hospital was built as well as an asylum. The council improved roads by opening George Street, union street and king street, many new streets and houses were formed, as well as the council. 
+      Aberdeen is know filled with families upon different generations and is a home to many people.</p>
+  </div>
+</body>
+</html>
+

@@ -48,7 +48,7 @@
 }
 
 #navBar a.active {
-  background-color: #9545ab;
+  background-color: #c841ee;
 }
 
 .menuButton{
@@ -70,4 +70,30 @@ a:focus, a:hover {
   padding-top:10px;
   width: 100%;
   height: 350px;
+}
+
+.btn-primary{
+  background-color: #731A8C !important;
+  border-color:#731A8C !important;
+}
+
+.box{
+  border: 2px solid purple;
+  height:250px;
+}
+
+.col-md-5{
+  padding: 0px !important;
+}
+
+.col-md-7{
+  padding: 0px !important;
+}
+
+
+@media (max-width: 380px) {
+  /* Phone */
+  .box{
+    border: 2px solid rgb(0, 255, 140);
+  }
 }

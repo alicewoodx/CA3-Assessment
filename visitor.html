@@ -1,14 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <title>Aberdeen</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-</head>
+<title>Aberdeen</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
 <body style="height: 100%;padding: 10px;">
   <div id="header" style="border-bottom:2.5px solid;border-color:#731A8C">
@@ -35,6 +33,115 @@
       </nav>
     </div>
   </div>
-</body>
 
+  <div class="container-fluid" style="padding-top:10px">
+    <div class="row">
+      <!-- 7-columns -->
+      <div class="col-md-7 box" style="border-right:none;" >
+        <div id="stonehavenContent" style="display:flex;padding:5px">
+          <div style="padding: 5px">
+            <h2>Stonehaven</h2>
+            <p>Stonehaven is a seaside town, with many different attractions, such as an outdoor swimming pool with a waterslide! It lies on Scotland's northeast coast and had a population of 11,602.</p>
+          </div>
+          <div>
+            <img style="padding:5px; float: right;" src="images/stonehaven.jpeg" width="300" height="200" /> 
+            <button class="btn btn-primary" style="float: right;" data-toggle="modal" data-target="#stonehavenModal" >More Details...</button>
+          </div>
+        </div>
+      </div>
+      
+      <!-- 5-columns -->
+      <div class="col-md-5 box">
+        <div id="unionsquareContent" style="display:flex;padding:5px">
+          <div style="padding: 5px">
+            <h2>Union Square</h2>
+            <p>Union Square is a shopping centre located in the centre of Aberdeen, Scotland. The centre contains a covered shopping mall and retail park. </p>
+          </div>
+          <div>
+            <img style="padding:5px; float: right;" src="images/unionsquare.jpeg" width="300" height="200"/>
+            <button class="btn btn-primary" style="float: right;" data-toggle="modal" data-target="#unionSquareModal" >More Details...</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row" style="padding-top:10px">
+      <!-- 5-columns -->
+      <div class="col-md-5 box" style="border-right:none;">
+        <div id="unionsquareContent" style="display:flex; padding:5px">
+          <div style="padding: 5px">
+            <h2>Union Square</h2>
+            <p>Union Square is a shopping centre located in the centre of Aberdeen, Scotland. The centre contains a covered shopping mall and retail park. </p>
+          </div>
+          <div>
+            <img style="padding:5px; float: right;" src="images/unionsquare.jpeg" width="300" height="200"/>
+            <button class="btn btn-primary" style="float: right;" data-toggle="modal" data-target="#unionSquareModal" >More Details...</button>
+          </div>
+        </div>
+      </div>
+      
+      <!-- 7-column -->
+      <div class="col-md-7 box" >
+        <div id="stonehavenContent" style="display:flex;padding:5px">
+          <div style="padding: 5px">
+            <h2>Stonehaven</h2>
+            <p>Stonehaven is a seaside town, with many different attractions, such as an outdoor swimming pool with a waterslide! It lies on Scotland's northeast coast and had a population of 11,602.</p>
+          </div>
+          <div>
+            <img style="padding:5px; float: right;" src="images/stonehaven.jpeg" width="300" height="200" /> 
+            <button class="btn btn-primary" style="float: right;" data-toggle="modal" data-target="#stonehavenModal" >More Details...</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <!-- Popup for Stonehaven -->
+   <div class="modal fade" id="stonehavenModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <h3 class="modal-title" id="exampleModalLabel">More information about Stonehaven!</h3>
+        </div>
+        <div class="modal-body">
+           <u>Stonehaven Open Air Pool:</u> If you visit during the warmer months, the Stonehaven Open Air Pool is a unique attraction. It's one of the few remaining outdoor saltwater pools in the UK and provides a refreshing experience.<br> Opening times as follows: Monday - Friday
+(1pm - 7:30pm), Saturday - Sunday (10am - 6pm).</br> <br> <u>Dunnottar Castle:</u> A stunning cliff-top fortress that offers breathtaking views of the North Sea. The castle has a rich history and is known for its dramatic location.</br><br> <u>Stonehaven Harbour:</u> The charming harbor area is a great place for a leisurely stroll. It's lined with shops, restaurants, and cafes, offering a delightful atmosphere.</br> <br> <u>St. Cyrus National Nature Reserve:</u> Located nearby, this nature reserve offers a beautiful sandy beach and diverse wildlife. It's a great place for nature walks and birdwatching.</br>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+   <!-- Popup for Union Square -->
+   <div class="modal fade" id="unionSquareModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">More information about Stonehaven!</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+           <u>Stonehaven Open Air Pool:</u> If you visit during the warmer months, the Stonehaven Open Air Pool is a unique attraction. It's one of the few remaining outdoor saltwater pools in the UK and provides a refreshing experience.<br> Opening times as follows: Monday - Friday
+(1pm - 7:30pm), Saturday - Sunday (10am - 6pm).</br> <br> <u>Dunnottar Castle:</u> A stunning cliff-top fortress that offers breathtaking views of the North Sea. The castle has a rich history and is known for its dramatic location.</br><br> <u>Stonehaven Harbour:</u> The charming harbor area is a great place for a leisurely stroll. It's lined with shops, restaurants, and cafes, offering a delightful atmosphere.</br> <br> <u>St. Cyrus National Nature Reserve:</u> Located nearby, this nature reserve offers a beautiful sandy beach and diverse wildlife. It's a great place for nature walks and birdwatching.</br>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
 </html>
